@@ -1,0 +1,10 @@
+keys:
+  - &bartjan age1n0k4lj6n3hkxr6kssrnjf3u6tckk7vfmgqgex3y34w9d6gz4pdwqw4aqg9
+  - &joingewis-laptop age1cqvpzczqhfpx09v2grlnhg3f7ven3rd0vu338dvz725rw83kraeqwjmz57
+
+creation_rules:
+  - path_regex: secrets\.yaml$
+    key_groups:
+      - age:
+          - *bartjan
+          - *joingewis-laptop
