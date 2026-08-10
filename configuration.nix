@@ -9,18 +9,6 @@
   boot = {
     loader.systemd-boot.enable = true;
     loader.efi.canTouchEfiVariables = true;
-    kernelParams = [ "consoleblank=0" ];
-    initrd.availableKernelModules = [
-      "ahci"
-      "nvme"
-      "sd_mod"
-      "sr_mod"
-      "usbhid"
-      "usb_storage"
-      "virtio_blk"
-      "virtio_pci"
-      "xhci_pci"
-    ];
   };
 
   systemd.targets = {
