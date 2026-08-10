@@ -45,17 +45,6 @@
   };
   users.users.root.openssh.authorizedKeys.keyFiles = [ ./authorized_keys ];
 
-  services.avahi = {
-    enable = true;
-    openFirewall = true;
-    nssmdns4 = true;
-    publish = {
-      enable = true;
-      addresses = true;
-      workstation = true;
-    };
-  };
-
   time.timeZone = "Europe/Amsterdam";
   i18n.defaultLocale = "en_US.UTF-8";
   console.keyMap = "us";
