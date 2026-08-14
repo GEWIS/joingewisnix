@@ -9,7 +9,6 @@
     owner = "wpa_supplicant";
     content = ''
       psk_iotroam=${config.sops.placeholder.iotroam-psk}
-      psk_hotspot=${config.sops.placeholder.hotspot-psk}
     '';
   };
 
@@ -28,10 +27,6 @@
       iotroam = {
         pskRaw = "ext:psk_iotroam";
         priority = 10;
-      };
-      hotspot = {
-        pskRaw = "ext:psk_hotspot";
-        priority = 5;
       };
     };
     extraConfig = ''
